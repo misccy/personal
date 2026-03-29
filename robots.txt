@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN.github.io/sitemap.xml
+Sitemap: https://misccy.github.io/personal/sitemap.xml
