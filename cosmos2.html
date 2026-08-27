@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>天成飯店集團 GEO 產學合作｜會議答覆</title>
+<style>
+:root{
+  --bg:#f4f6f9;
+  --paper:#ffffff;
+  --ink:#172033;
+  --muted:#667085;
+  --line:#e6eaf0;
+  --brand:#7a243b;
+  --brand-2:#9b3854;
+  --brand-soft:#f8eef1;
+  --accent:#214e7a;
+  --shadow:0 14px 34px rgba(25,35,55,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.82;
+}
+a{color:var(--accent);text-decoration:none;word-break:break-all}
+a:hover{text-decoration:underline}
+.topbar{
+  position:sticky;top:0;z-index:30;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:1180px;margin:auto;padding:12px 24px;
+  display:flex;gap:18px;align-items:center;justify-content:space-between;
+}
+.brand{font-weight:800;color:var(--brand);letter-spacing:.02em}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.nav a{
+  padding:7px 12px;border-radius:999px;color:#475467;font-size:14px;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand);text-decoration:none}
+.actions{display:flex;gap:8px}
+button{
+  border:1px solid var(--line);background:white;color:var(--ink);
+  border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:700;
+}
+button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.hero{
+  background:linear-gradient(135deg,#5d1c2f 0%,#7a243b 58%,#4e2332 100%);
+  color:#fff;
+}
+.hero-inner{max-width:1180px;margin:auto;padding:70px 24px 62px}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.16em;opacity:.8}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.12;margin:12px 0 18px;letter-spacing:-.035em}
+.hero p{max-width:800px;font-size:18px;opacity:.9;margin:0}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.meta span{
+  border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.08);
+  padding:7px 11px;border-radius:999px;font-size:13px
+}
+main{max-width:1180px;margin:auto;padding:42px 24px 80px}
+.section{scroll-margin-top:90px;margin-bottom:60px}
+.section-head{
+  display:grid;grid-template-columns:1fr minmax(260px,420px);
+  gap:30px;align-items:end;margin:10px 0 24px
+}
+.kicker{font-size:12px;font-weight:900;letter-spacing:.14em;color:var(--brand);margin-bottom:6px}
+h2{font-size:34px;line-height:1.2;margin:0}
+.section-desc{color:var(--muted);margin:0}
+.qa{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:18px;margin:16px 0;box-shadow:var(--shadow);overflow:hidden
+}
+.qa summary{
+  list-style:none;cursor:pointer;padding:22px 24px;
+  display:flex;gap:15px;align-items:flex-start;background:#fff
+}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary:hover{background:#fbfbfc}
+.qnum{
+  flex:0 0 auto;width:34px;height:34px;border-radius:10px;
+  background:var(--brand-soft);color:var(--brand);
+  display:grid;place-items:center;font-weight:900
+}
+.qwrap{flex:1}
+.qtitle{font-size:18px;font-weight:800;line-height:1.55}
+.qtitle + .qtitle{margin-top:8px}
+.chev{font-size:20px;color:#98a2b3;transition:.2s}
+details[open] .chev{transform:rotate(180deg)}
+.answer{
+  border-top:1px solid var(--line);
+  padding:22px 24px 26px 73px;
+  background:linear-gradient(180deg,#fff,#fcfcfd)
+}
+.answer p{margin:0 0 14px}
+.answer p:last-child{margin-bottom:0}
+.answer p.url-only{
+  padding:10px 12px;background:#f8fafc;border:1px solid var(--line);
+  border-radius:10px;font-size:13px
+}
+.table-wrap{overflow:auto;margin:18px 0}
+table{width:100%;border-collapse:collapse;min-width:620px;font-size:14px}
+th{
+  background:#f7f4f5;color:#592031;text-align:left;
+  padding:11px 12px;border:1px solid #e5dadd;font-weight:800
+}
+td{padding:10px 12px;border:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#fbfcfd}
+.footer{
+  border-top:1px solid var(--line);background:#fff;color:var(--muted)
+}
+.footer-inner{max-width:1180px;margin:auto;padding:28px 24px;font-size:13px}
+.note{
+  margin-top:22px;padding:15px 18px;border-radius:14px;
+  background:#fff;border:1px solid var(--line);color:var(--muted);font-size:14px
+}
+@media(max-width:800px){
+  .topbar-inner{align-items:flex-start;flex-direction:column}
+  .actions{display:none}
+  .section-head{grid-template-columns:1fr}
+  .answer{padding:20px}
+  .hero-inner{padding-top:48px}
+}
+@media print{
+  body{background:#fff}
+  .topbar,.actions{display:none!important}
+  .hero{background:#fff!important;color:#111;border-bottom:2px solid #7a243b}
+  .hero p,.eyebrow{color:#333}
+  main{max-width:none;padding:20px}
+  .qa{box-shadow:none;break-inside:avoid}
+  .qa:not([open]) .answer{display:block}
+  .qa summary{pointer-events:none}
+  .chev{display:none}
+  .section{break-before:page}
+  .section:first-child{break-before:auto}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">天成飯店集團 × 東吳大學｜GEO 產學合作答覆</div>
+    <nav class="nav">
+      <a href="#method">A・方法與驗證</a>
+      <a href="#deployment">B・部署與整合</a>
+      <a href="#business">C・商務與治理</a>
+    </nav>
+    <div class="actions">
+      <button onclick="setAll(true)">全部展開</button>
+      <button onclick="setAll(false)">全部收合</button>
+      <button class="primary" onclick="window.print()">列印 / PDF</button>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">MEETING RESPONSE · GEO / AI SEARCH VISIBILITY</div>
+    <h1>天成飯店集團<br>產學合作會議答覆</h1>
+    <p>依原始答覆文件整理為可瀏覽、可列印的 HTML 版本。內容分為方法與驗證、部署與整合、商務與治理三大部分。</p>
+    <div class="meta">
+      <span>Google AI Overview</span>
+      <span>RAG 檢索增強生成</span>
+      <span>網站 GEO 優化</span>
+      <span>11 站導入</span>
+    </div>
+  </div>
+</section>
+<main>
+
+<section class="section" id="method">
+  <div class="section-head">
+    <div>
+      <div class="kicker">METHOD &amp; VALIDATION</div>
+      <h2>A・方法與驗證</h2>
+    </div>
+    <p class="section-desc">針對 GEO 方法、合規性、基準查詢、同業對照、網站友善度與成效歸因的會議答覆。</p>
+  </div>
+<details class="qa" open><summary><div class="qnum">1</div><div class="qwrap"><div class="qtitle">想了解提案中 “注入” 實際上的運作方式為何? 是透過內容結構與語意品質使 AI 自然擷取還是涉及持續性自動化提交或操作? 若為後者，12 個月的費用支付的是一次性建置或是持續維運成本?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">「這邊我先澄清一下，我們簡報裡面講的『注入』，不是把資料直接灌進 Google 或 OpenAI，也不是每天用程式硬送資料給 AI。</p><p class="">我們真正要做的，是把天成自己的資料，例如房型、設施、交通、活動、餐飲、住房專案等，整理成比較容易被搜尋引擎理解的內容，再透過RAG（Retrieval-Augmented Generation，檢索增強生成）搭配爬蟲，把第一方資料跟外部公開資訊 (第三方)，例如景點、交通、展覽、旅遊活動等整合起來。</p><p class="">這樣天成的網站就不只是介紹『我們有什麼』，而是可以回答『在什麼旅遊情境下，旅客為什麼適合選天成』。例如旅客問『去華山看展覽住哪裡方便』，我們就希望把華山的展覽、交通情境，跟華山町的住宿優勢連結起來，形成更完整、比較容易被 Google AI 理解和引用的官方內容。</p><p class="">所以 RAG 的角色不是去操控 Google，而是幫天成建立一套可以持續產生、更新和整理第一方知識的機制；Google 最後還是依照自己的爬取、索引和演算法決定是否收錄與引用。</p><p class="">至於12個月的費用，這部分是專案建置費，主要支付的是這套資料架構、RAG與爬蟲機制、內容結構、網站整合、測試與導入的建置成本，不包含專案期滿後的持續維運費用。如果12個月後天成希望這套機制持續運作，例如持續爬取資料、更新內容、監測 AI Overview、調整頁面或維護系統，那會另外進入後續的維運方案，費用會另外規劃，不會和第一年的建置費混在一起。</p></div></details><details class="qa"><summary><div class="qnum">2</div><div class="qwrap"><div class="qtitle">承上，能否請團隊提供此做法在 Google 和 OpenAI 的現行服務條款下的合規性書面說明? 上次簡報提及了不少 Google 對量產內容的懲罰機制，因此想先了解團隊的做法跟該界線的區隔，以幫助我們評估品牌風險。</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">我們的方法跟Google所說的『大量產製低價值內容』其實有很大的差別。Google並沒有禁止使用AI產生或協助整理內容，它真正禁止的是大量產生沒有新增價值、只是為了操弄搜尋排名的頁面。Google目前也明確表示，生成式AI可以用來協助研究、整理及建立內容結構，重點還是內容要準確、有品質，而且真的對使用者有幫助。<a href="https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=zh-tw&amp;utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=zh-tw&amp;utm_source=chatgpt.com</a></p><p class="">所以我們不會用RAG一次產生幾千個只有關鍵字不同的頁面，也不會把其他網站的內容抓回來稍微改寫就刊登。RAG的角色是先找資料、比對資料，再把天成自己的第一方資訊和合法可使用的外部資訊整合起來，最後形成真正有旅遊決策價值的內容。</p><p class="">例如我們可以知道華山最近有什麼展覽、捷運怎麼走，再結合華山町自己的房型、交通和住宿資訊，讓天成網站可以回答旅客完整的問題，而不是把外面的文章複製回來。</p><p class="">Google最後還是按照正常的爬取、索引與演算法決定是否收錄。我們不會用假流量、假點擊、隱藏文字，或任何方式去操控Google AI Overview。Google目前的垃圾內容政策確實將「大量產生無價值頁面」、「抓取其他網站內容後大量產頁」以及拼接內容但沒有增加實質價值列為風險行為；而且這些政策現在也明確適用於Google搜尋中的生成式AI結果。<a href="https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-TW&amp;utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">https://developers.google.com/search/docs/essentials/spam-policies?hl=zh-TW&amp;utm_source=chatgpt.com</a></p><p class="url-only"><a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=zh-tw" target="_blank" rel="noopener noreferrer">https://developers.google.com/search/docs/fundamentals/ai-optimization-guide?hl=zh-tw</a> (Google認同GEO優化)</p><p class="">自動化是拿來更新資料、整理知識和提升內容品質，不是拿來大量製造頁面或操控AI平台。我們不大量產生只有關鍵字差異、對使用者沒有新增價值的頁面，不做只有搜尋機器人看得到、一般使用者看不到的隱藏內容或 cloaking、不透過自動查詢、假流量、假點擊或其他方式操縱 Google 或 OpenAI。</p></div></details><details class="qa"><summary><div class="qnum">3</div><div class="qwrap"><div class="qtitle">33組基準查詢的挑選方法為何? 是否曾以其他來源設計的查詢組交叉驗證，結果是否一致?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">這33組查詢的定位，是我們在第一次提案前建立的診斷性基準題組，不是宣稱33題就可以代表所有旅客的搜尋行為。</p><p class="">當時的挑選方式主要有三個原則。第一，我們是以天成各官方網站實際提供的產品與服務為基礎，例如親子、交通、長住、溫泉、高爾夫、企業宴會等；第二，刻意不放『天成、蜂巢、瑞穗天合』這類品牌名稱，因為我們真正想測的是旅客還不知道天成時，Google AI會不會主動把天成放進候選名單；第三，查詢會寫成一般消費者比較可能使用的自然語句，而不是傳統SEO式的關鍵字堆疊。</p><p class="">正式合作後，我們會希望天成提供各事業體最重要的業務情境，例如親子、長住、企業宴會、高爾夫等，再由我們依統一規則轉成查詢字句，雙方確認後固定成Baseline。這樣既可以納入天成真正重視的需求，也能避免查詢在專案中途一直改變，導致前後無法比較。專案開始後若天成還有新的查詢想測，我們也可以持續加入，但會列為探索性監測，而不回頭改變原本的驗收基準。</p><div class="table-wrap"><table><thead><tr><th>題組</th><th>誰提供</th><th>是否作為主要KPI</th></tr></thead><tbody><tr><td>固定Baseline</td><td>研究團隊設計、雙方確認</td><td>是</td></tr><tr><td>天成業務情境題</td><td>天成提供需求方向，研究團隊轉成標準查詢</td><td>是，但需事前確認</td></tr><tr><td>探索性查詢</td><td>天成可隨時提出</td><td>否，只供觀察</td></tr></tbody></table></div></div></details><details class="qa"><summary><div class="qnum">4</div><div class="qwrap"><div class="qtitle">提案中未包含同業對照數據，團隊是否有其它本土飯店在相同測試規格下的現況可供參考? 若無，我們可以自行測試，但希望能先對齊團隊的測試方法。</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">目前我們手上有其他本土飯店的公開實證案例，也看過一些成功與失敗的AI Overview收錄結果，但如果要很嚴謹地說，目前還沒有一組是完全按照天成這次相同的33題、相同時間、相同設備與相同判定規則跑完的同業Benchmark，所以無法把不同條件下的資料直接拿來當對照。</p><p class="">如果天成希望建立同業比較，我反而建議正式合作開始時，我們一起把測試規格先固定下來，再選擇幾家產品定位相近的本土飯店作為對照。這樣未來看到差異時，才知道是真正的品牌與網站差異，而不是因為測試環境不同。若想自行測試，可對齊以下表格項目:</p><div class="table-wrap"><table><thead><tr><th>測試項目</th><th>建議規則</th></tr></thead><tbody><tr><td>查詢題組</td><td>使用同一批固定查詢</td></tr><tr><td>地區</td><td>台灣</td></tr><tr><td>語言</td><td>繁體中文</td></tr><tr><td>Google登入狀態</td><td>未登入</td></tr><tr><td>瀏覽環境</td><td>固定瀏覽器／無痕模式</td></tr><tr><td>裝置</td><td>Desktop固定</td></tr><tr><td>測試時段</td><td>同一時間窗口</td></tr><tr><td>重複次數</td><td>不同日期至少3次</td></tr><tr><td>AI Overview是否觸發</td><td>獨立紀錄</td></tr><tr><td>品牌是否進摘要</td><td>獨立紀錄</td></tr><tr><td>官方網站是否被引用</td><td>獨立紀錄</td></tr><tr><td>第三方來源</td><td>同時記錄OTA、媒體、部落格等</td></tr></tbody></table></div></div></details><details class="qa"><summary><div class="qnum">5</div><div class="qwrap"><div class="qtitle">簡報所示的網站友善分數(53至57分) 使用哪個工具? 此分數與 AI 引用之間的關聯性強度為何?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">上次簡報中的 53 到 57 分，是使用 AEO Scanner（aeoscan.tw） 做的初步網站健檢。這個工具會從 JSON-LD、FAQ Schema、robots.txt、Meta Description、hreflang、聯絡資訊、圖片 alt 等多項技術與內容結構指標，給網站一個 100 分制的 AI 友善度評分。</p><p class="">但這個分數要特別說明，它不是 Google 官方分數，也不能直接解讀成『53分就只有53%的機率被AI Overview引用』。它比較像是一個快速健檢工具，用來找出網站在技術結構與內容表達上哪些地方可能還不夠友善。</p><p class="">所以我們認為，依照掃描結果去改善，例如補強結構化資料、內容層次、網站可爬取性、實體資訊一致性，確實有機會先改善網站被AI理解與檢索的條件；但是這不代表把分數從55分做到90分，就一定可以持續被Google AI Overview引用。Google官方本身也明確表示，AI Overview與AI Mode沒有一個特殊的AI分數或特殊Schema可以保證收錄；即使網站完全符合技術要求與最佳實務，Google仍不保證一定會爬取、索引或呈現內容。<a href="https://developers.google.com/search/docs/appearance/ai-features?hl=zh-tw" target="_blank" rel="noopener noreferrer">https://developers.google.com/search/docs/appearance/ai-features?hl=zh-tw</a></p><p class="">所以我們會把AEO Scanner的分數定位成前期診斷指標，不是最終KPI。真正要看的還是實際查詢中的品牌出現率、官方網站引用率，以及這些結果能不能在一段時間內維持。</p></div></details><details class="qa"><summary><div class="qnum">6</div><div class="qwrap"><div class="qtitle">前陣子我們自行複測了部分查詢，發現與 8/7 結果不一致的情形 : 例如原記錄 “未觸發摘要” 的查詢目前已會觸發。想了解一下日後的月度監測報告如何區分 ”平台端自身變動” 與 “專案作為的效果” 以及歸因方式?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">這個現象是正常的，而且你們這次複測的結果，其實剛好說明為什麼我們後續不能只靠某一天的一次搜尋來判斷成效。畢竟Google AI Overview本身會持續變動，同一句查詢今天可能沒有摘要，隔一段時間又出現，所以我們有必要把『Google有沒有產生AI摘要』和『天成有沒有被AI採用』分開看。</p><p class="">第一層是平台端變動：例如原本沒有AI Overview，後來Google自己開始產生摘要。這一層我們不會直接算成專案成果。第二層才是我們真正要觀察的：當AI Overview有出現時，摘要裡有沒有出現天成，以及引用來源有沒有使用天成官方網站。這兩個指標才比較直接反映天成網站內容與AI能見度的變化。</p><p class="">至於在歸因方面，我們後續會先從測試設計上處理。正式合作開始時，我們會和天成一起確認一批目前確實尚未被收錄、而且本身就符合天成產品與服務能力的查詢字句，作為正式的 Baseline。這些查詢一旦雙方確認，就會固定下來，不會在專案執行過程中任意更換。</p><p class="">接著我們會先記錄每一題在導入前的狀態，例如 AI Overview 是否出現、摘要中是否提到天成、引用來源中是否有天成官方網站。等到網站內容、結構化資料或 RAG（檢索增強生成）相關機制完成導入後，再用同一批查詢字句進行重測。</p><p class="">如果某一題在專案開始前，雙方都確認是『摘要沒有天成、引用也沒有天成官網』，而在完成導入之後，開始出現天成品牌，甚至進一步引用天成官方網站，這種從未收錄到被收錄的前後變化，就可以作為專案成效的重要證據。</p><p class="">當然，Google 平台本身還是會持續變動，所以我們不會只看單次結果，而是會看同一批固定查詢在一段時間內，是否持續由失敗轉為成功。這樣可以降低平台波動造成的誤判。因此，先確認失敗、固定題目、執行介入、再用同題重測，觀察是否由未收錄轉成被收錄。</p></div></details></section>
+<section class="section" id="deployment">
+  <div class="section-head">
+    <div>
+      <div class="kicker">DEPLOYMENT &amp; INTEGRATION</div>
+      <h2>B・部署與整合</h2>
+    </div>
+    <p class="section-desc">針對網站權限、WordPress 共存、既有網站商、知識治理與 Phase 2 擴充的部署說明。</p>
+  </div>
+<details class="qa"><summary><div class="qnum">1</div><div class="qwrap"><div class="qtitle">請團隊提供部署所需的權限清單 : robots.txt 修改、逐頁插入 JSON-LD、自訂網址路徑與頁面模板新增、CDN 或回應標頭調整、CMS 後台或程式碼層介入、主機層存取….. 每一項是屬 “必要” 或是 “有則更佳”?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">我們原則上希望把天成端的工作降到最低。網站部署、爬蟲、RAG、排程以及後續技術調整，都由我們研究團隊負責。天成主要需要在專案初期協助提供必要的 CMS 或主機部署權限，以及確認哪些資料來源可以使用。完成部署後，日常執行不需要天成人員手動操作。</p><p class="">而且我們的 crawler 並不是大量爬取型，而是針對事先核准的有限資料來源，以低頻排程方式更新，所以不會對網站造成大量流量或運算負擔。至於需要開到哪一層權限，我們仍會採最小權限原則。如果 CMS 加上現有主機環境就可以完成，就不會要求更高的 Cloud 或 Root 權限。</p><div class="table-wrap"><table><thead><tr><th>權限</th><th>定位</th></tr></thead><tbody><tr><td>CMS／WordPress 管理與內容發布</td><td>必要</td></tr><tr><td>Python 執行環境、排程、必要 API 權限</td><td>若採站內 RAG 模組則必要</td></tr><tr><td>SSH／主機層</td><td>部署時可能需要，完成後可縮限或撤除</td></tr><tr><td>Root／Cloud 管理員</td><td>原則上不需要</td></tr><tr><td>CDN／WAF</td><td>只有遇到存取問題才需要</td></tr></tbody></table></div></div></details><details class="qa"><summary><div class="qnum">2</div><div class="qwrap"><div class="qtitle">我們先前已完成 11 站公開層的技術盤點，多數站點為 WordPress 架構並已安裝基礎 SEO 外掛。想了解團隊的部署方式與既有外掛會如何共存? 是在現有架構內作業、或是需另行安裝模組?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">我們原則上會在天成既有的 WordPress 架構內作業，不會要求把原本的 SEO 外掛換掉，也不會再另外安裝一套重複功能的 SEO 系統。</p><p class="">現有 SEO 外掛像是 Title、Meta、Canonical、Sitemap 等功能可以繼續使用，跟我們要做的 GEO 並不衝突。SEO 本身仍然是很重要的基礎，但 SEO 表現好，不代表在 AI Overview 或其他生成式搜尋裡，就一定會有好的品牌提及或官方引用，所以我們會補強的是既有 SEO 沒有完整處理到的部分，例如實體關係、結構化資料、內容語意、AI 可理解的知識結構，以及後續 RAG 資料更新。</p><p class="">部署上，我們會盡量減少新增第三方外掛。因為每多一個外掛，就多一層版本相依、維護成本和潛在資安風險。所以能直接透過既有網站模板、原生程式碼或受控的自訂程式完成，我們就不另外裝外掛。這樣的好處是程式碼掌握在專案團隊手上，版本比較容易管理，也不會因為某個第三方外掛停止更新或發生漏洞，影響整個網站。</p></div></details><details class="qa"><summary><div class="qnum">3</div><div class="qwrap"><div class="qtitle">提案裡說明報價不含 “既有網站商額外收取之修改與系統介接費”，想請團隊分享依照過往專案經驗，這筆費用通常落在什麼範圍? 哪些情況會發生? 採用哪一種部署方式可以將費用降到最低? 想聽聽團隊的建議</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">這筆費用其實不一定會發生，主要取決於天成目前各站跟原網站商之間的維護方式，以及我們能不能取得必要的 CMS 或主機權限。如果天成可以授權我們直接在現有 WordPress 或網站環境內部署，例如加入必要的結構化資料、模板程式、RAG 模組或排程，那這部分原則上由我們專案團隊自己完成，既有網站商不一定需要額外介入，這筆費用甚至可能是零。</p><p class="">比較容易產生額外費用的情況，是網站商合約規定所有程式修改一定要由原廠商處理，或者網站是封閉式 CMS、需要修改核心模板、WAF、CDN、API，甚至涉及訂房系統等第三方平台，這時候原網站商才可能另外收工時或介接費。</p></div></details><details class="qa"><summary><div class="qnum">4</div><div class="qwrap"><div class="qtitle">提案裡M3 至M5 規劃的中央知識庫 : 我們內部有現行的知識治理系統與固定維運週期在運作。想確認團隊規劃能否建議採取 “單一內容來源、雙重發佈面” 架構，也就是集團知識庫作為權威上游，團隊負責發佈層的結構化，而不另建平行的內容主檔? 上游架構是我們內部治理的既定做法；發佈層的實作方式則很開放，歡迎團隊建議</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">可以，而且我們反而會建議採這種架構。既然天成內部已經有現行的知識治理系統，我們會把它視為唯一的權威來源，也就是 Single Source of Truth，不另外建立第二套跟天成競爭的內容主檔。</p><p class="">我們負責的會是下游的 RAG 與結構化發布層。也就是從天成已經核准的資料裡，把適合公開的內容取出來，轉換成不同網站需要的頁面內容、JSON-LD、Schema、FAQ 或其他 AI 比較容易理解的結構，再發布到各館官網。</p><p class="">這樣天成內部還是按照原本的流程維護一次資料，我們不改變你們既有的治理方式；我們負責的是怎麼把這些已經核准的知識轉成外部搜尋與生成式 AI 能夠讀懂的形式。</p></div></details><details class="qa"><summary><div class="qnum">5</div><div class="qwrap"><div class="qtitle">PHASE 2 所列的訂房引擎、CRS 與即時房價串接，雖不在本次合約範圍內，但是否方便於合約中敘明、日後再另案討論</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">可以，這部分我們沒有問題。Phase 2 本來就是後續擴充方向，這次 Phase 1 先完成官方知識、網站結構、RAG 與 AI 能見度基礎；訂房引擎、CRS、PMS、Channel Manager、即時房價與庫存資料串接，這次不列入交付範圍與報價，但可以在合約或附件中明確列為後續可擴充項目，日後如果天成有需求，再依當時的系統環境、API 規格與第三方廠商條件另案討論。</p></div></details></section>
+<section class="section" id="business">
+  <div class="section-head">
+    <div>
+      <div class="kicker">BUSINESS &amp; GOVERNANCE</div>
+      <h2>C・商務與治理</h2>
+    </div>
+    <p class="section-desc">針對排他、維護費、技術移轉、KPI 驗收、智慧財產與資料治理的商務答覆。</p>
+  </div>
+<details class="qa"><summary><div class="qnum">1</div><div class="qwrap"><div class="qtitle">上次會議中提及團隊服務的台灣飯店業有兩家，是否能請教範圍如何界定(地區、業態、期間)? 合約中是否納入排他承諾? 若現有合作對象與天成在台北市場直接重疊，這部分會如何處理？</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">從專案執行的角度來看，我們認為現有合作並不衝突，也沒有必要採取全面排他。原因是我們提供的不是一套標準化、可以直接複製到不同飯店的服務，而是會依照每個集團自己的品牌定位、網站架構、第一方資料、客群與查詢情境，分別設計內容、RAG 知識結構與部署方式。</p><p class="">即使不同飯店在部分市場上存在競爭關係，實際專案中使用的資料來源、查詢策略、內容架構、技術設定與未公開成果都會彼此隔離，不會把一家合作對象的資料、策略或成果移用到另一家。例如，洛碁中華館強調西門町逛街與活動、天成華山町強調文創，主題差異很大，Google 也會依照不同查詢情境與內容關聯性進行判斷。</p><p class="">而且生成式 AI 的查詢，通常會比傳統關鍵字更具體、更情境化。使用者不一定只問『台北飯店推薦』，而可能會問『去華山看展覽，附近適合住哪裡』、『西門町逛街晚上想住附近，有哪些選擇』，甚至會再加入交通、同行對象、活動目的等條件。這種情況下，不同飯店因為主題定位、地理位置與服務特色不同，本來就很容易被 AI 做差異化判斷。</p><p class="">只有當查詢非常廣泛，例如『台北車站飯店推薦』，才會同時出現較多合理競爭者。這時候本質上就是一般市場競爭，不適合用排他方式處理，而應該回到各品牌自身的內容品質、第一方資料與情境優勢。所以我們認為，GEO 專案更重要的是把每個品牌最適合被推薦的主題與情境做清楚，而不是透過全面排他來避免競爭。從這個角度來看，並沒有必要做產業排他，真正需要保護的是各合作案的資料、策略與未公開成果。</p></div></details><details class="qa"><summary><div class="qnum">2</div><div class="qwrap"><div class="qtitle">第二年起的維護費如何計算？上回的提案試算表裡那欄是 0，我們希望先知道實際的報價區間</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">第一年的主要工作是完成整體基礎建設，包括網站結構、Schema、RAG、爬蟲、內容架構與各站的導入，所以第二年開始就不會再重複收取這些建置成本。</p><p class="">第二年的工作重點會轉成『維持成果』。因為生成式搜尋不是做完一次就永久有效，網站內容如果長期沒有更新，或者旅遊資訊、活動、交通、設施等資料逐漸過時，原本建立起來的搜尋能見度與官方引用優勢都有可能慢慢下降。</p><p class="">所以第二年主要會負責 11 站的內容新鮮度、RAG 與爬蟲運作、資料更新、AI Overview 收錄監測，以及必要的內容與結構調整。目前我們初步規劃的維護費是 11 站合計每月 5 萬元，也就是每年 60 萬元。這個概念相當於由我們配置一個專責維運能量，持續負責全集團 11 站的生成式搜尋能見度，而不是請天成內部另外養一套人力與技術。</p></div></details><details class="qa"><summary><div class="qnum">3</div><div class="qwrap"><div class="qtitle">提案書載明方法 “可移轉”，而會議中另提到核心方法在商業上另行約定。我們希望能以書面確認 : 合約期滿後，哪些部分天成可以自主維運、哪些需要繼續付費？</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">我們所說的『可移轉』，主要是指第一年專案完成之後，已經建置在天成網站上的成果，不會因為第二年沒有續約就失效。包括已完成的頁面內容、JSON-LD、Schema、網站結構調整、資料字典、操作文件、查詢基準以及已部署的相關設定，天成都可以繼續使用，也可以由自己的網站人員或既有網站商自行維護。</p><p class="">需要第二年持續付費的，主要是研究團隊持續提供的技術與 GEO 維運服務，例如爬蟲的持續執行與調整、RAG 的資料更新與檢索維護、AI Overview 的定期監測、平台規則變動後的技術調整，以及必要的內容優化。</p><p class="">第二年維護的重要性，不只是維持網站內容的新鮮度與權威度。Google 的搜尋演算法、AI Overview 的生成與引用機制，以及生成式搜尋的判定方式本身都會持續調整，所以第一年有效的方法，不代表兩三年後完全不需要改變。如果沒有持續監測，可能網站本身沒有做錯，但原本表現良好的查詢與引用，仍然可能因為平台環境改變而逐漸下降。</p><p class="">另外，我們本身是研究團隊，這也是維護服務跟一般網站維護比較不一樣的地方。我們會持續進行生成式搜尋、AI 引用、爬蟲治理與相關議題的學術研究。未來如果研究中發現新的影響因素、有效的內容結構，或 Google、OpenAI 等平台出現新的機制，我們可以在不涉及其他合作對象機密的前提下，把這些研究發現再轉化回天成的 GEO 優化策略。所以第二年的維護，不只是把第一年的東西原封不動維持住，而是讓天成的網站可以隨著平台變化與新的研究證據持續調整。</p></div></details><details class="qa"><summary><div class="qnum">4＋5</div><div class="qwrap"><div class="qtitle">想了解合約型 KPI 未達成時的處理機制 : 補救機制、費用調整或終止權，目前在提案中沒有提及相關條款</div><div class="qtitle">驗收標準希望直接採用團隊簡報裡所主張的規格寫入合約 : 固定查詢組、固定測試環境、重複測試(團隊提出的10次中9次以上標準)、30至90天的持續性檢驗、提及與引用分別記錄</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">這兩題其實可以一起回答，因為驗收標準和未達標時的處理機制，本來就應該放在同一套制度裡。</p><p class="">正式合作開始時，我們會先和天成共同確認一批目前確實尚未出現天成品牌、也尚未引用天成官方網站，而且本身確實符合天成產品與服務能力的查詢字句，作為固定的 Baseline。這批查詢一旦經雙方確認，就不會在專案執行過程中任意更換。</p><p class="">後續驗收會採固定查詢、固定測試環境，包括地區、語言、裝置與登入狀態等條件都事先鎖定，並且不是用單次搜尋結果判斷，而是在 30 至 90 天期間內進行重複測試。在穩定性的判定上，我們也可以把先前簡報中提到的『10 次測試至少 9 次成功』納入正式規格。也就是說，不會因為某一題偶爾出現一次天成，就把它認定為穩定收錄，而是必須在重複測試中維持相當高的一致性，才算真正達到穩定成果。</p><p class="">除了單一查詢是否穩定之外，我們還會看整體有多少原本失敗的查詢，在專案導入後成功轉換。例如雙方一開始確認 30 組 Baseline 查詢，這些查詢原本都沒有出現天成品牌或官方引用，專案完成後，如果其中 18 組達到穩定品牌提及或官方引用，那整體轉成功率就是 60%。我們初步可以把『品牌提及或官方引用至少一項成功』的整體轉成功率設定在 60% 以上；至於『官方網站實際被引用』，則可以另外設定獨立門檻，例如 30% 以上。正式比例仍可以依雙方最後確認的 Baseline 數量與查詢難度，在合約附件中訂定。</p><p class="">如果是我們可以直接控制的合約交付物，例如網站部署、Schema、RAG 模組、資料字典或月報沒有完成，我們可以設定 30 天的無償補正期。如果是平台成效沒有達到雙方約定的門檻，我們也不會只用『Google 是第三方平台』來回應，而是會啟動無償補強機制。例如整體轉成功率落在 40% 到 59%，可以提供 60 天的無償優化；如果低於 40%，則提供 90 天的強化與重新驗證，仍使用原本同一批查詢與相同測試條件。</p></div></details><details class="qa"><summary><div class="qnum">6</div><div class="qwrap"><div class="qtitle">智慧財產與學術發表 : 本案成果的權利歸屬以及團隊日後以本案發表論文或作為對外案例時的事前同意與匿名化機制，希望在合約中明確約定。另外也想了解團隊過去的慣例做法為何?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">智慧財產權方面，我們會把『核心技術』和『天成專案成果』區分開來。爬蟲、RAG 架構、演算法、通用程式模組及相關技術方法，是研究團隊原本所累積的核心技術，其智慧財產權仍由研究團隊或依東吳大學產學合作相關規範處理。但是這些技術一旦經過客製化，實際部署到天成網站後，包含已建置的頁面、程式設定、Schema、JSON-LD、資料結構、網站端模組及其他為天成本案所完成的專屬成果，天成就擁有完整的使用、維護、修改及委託第三方維護的權利，不會因為合作期滿或第二年沒有續約就被收回或停止使用。簡單來說，底層技術是我們的，但利用這些技術為天成建置並部署完成的成果，是天成可以永久掌握及持續使用的。</p><p class="">至於在論文發表方面，本案目前並沒有規劃把天成的專案成果、營運資料或實際成效拿來作為學術論文的研究素材，所以不會有未來直接把天成案例拿去發表論文的問題。唯一需要說明的是，因為這是正式的產學合作案，合作實績本身會依學校行政與公開機制揭露。例如學校或系所網站可能會出現『東吳大學資料科學系與天成飯店集團進行 GEO 產學合作』這類基本資訊。這部分屬於產學合作事實的公開，原則上無法完全避免。除了這個合作事實之外，我們不會主動對外揭露本案的查詢字句、Baseline、AI Overview 成效、營運數據、網站架構、RAG 或 crawler 部署細節、內部資料、專案報告、截圖或其他未公開成果。</p></div></details><details class="qa"><summary><div class="qnum">7</div><div class="qwrap"><div class="qtitle">天成提供的通路結構與營運數據，是否會進入研究資料集? 相關保存方式、去識別化與合作結束後的處理方式為何?</div></div><div class="chev">⌄</div></summary><div class="answer"><p class="">承上，天成為本案提供的通路結構、流量、營運數據或其他非公開資料，原則上都定位為『專案執行資料』，不會因為提供給研究團隊，就自動進入學術研究資料集。我們使用這些資料的目的，是為了執行本案，例如判斷哪些內容值得優先優化、分析官網與 OTA 的導流情況、設定監測指標或評估 GEO 成效，不會自行把這些資料拿去做論文分析或建立其他研究資料庫。合作結束後，天成提供的非公開原始資料會依合約約定處理，可以採返還、刪除，或只保留專案驗收所必要的紀錄；不會因為專案結束就由研究團隊無限期保存。</p></div></details></section>
+<div class="note">
+  本頁為會議答覆整理版；正式權利義務、KPI、驗收、維護費、智慧財產、資料保存與後續服務範圍，仍以雙方最終簽署之產學合作契約及附件為準。
+</div>
+</main>
+<footer class="footer">
+  <div class="footer-inner">天成飯店集團 × 東吳大學｜GEO 產學合作會議答覆 HTML 版</div>
+</footer>
+<script>
+function setAll(openState){
+  document.querySelectorAll('details.qa').forEach(d => d.open = openState);
+}
+</script>
+</body>
+</html>
