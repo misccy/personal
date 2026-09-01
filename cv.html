@@ -206,6 +206,8 @@ body.notes-on .slide.active .notes{display:block}
 </style>
 </head>
 <body>
+<div id="controls"><button id="prev">‹</button><span id="counter">1 / 13</span><span id="timer">08:00</span><button id="next">›</button><button id="fs">⛶</button></div>
+<div id="help">← → 換頁｜N 講稿｜T 計時｜F 全螢幕</div><div id="progress"></div>
 <div id="stage">
 <!-- 1 -->
 <section class="slide active" data-section="自我介紹｜8 min" data-seconds="480">
@@ -396,7 +398,7 @@ body.notes-on .slide.active .notes{display:block}
 <section class="slide en" data-section="英文試教｜5 min" data-seconds="300">
   <div class="head"><span class="section">English Micro-Teaching</span><span class="duration">0:00–0:55</span></div>
   <h2>Selective Attention in Digital Behavior</h2>
-  <div class="video-grid"><div class="video" id="videoBox"><iframe width="560" height="315" src="https://www.youtube.com/embed/vJG698U2Mvo?si=Ep0OOs1MGD-ZgXAO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="prompt"><div class="q">Do we really notice<br><b>everything we see?</b></div><div class="s">Your job is simple:<br><b>count how many times the players in white pass the ball.</b></div></div></div>
+  <div class="video-grid"><div class="video" id="videoBox"><iframe width="560" height="315" data-src="https://www.youtube.com/embed/vJG698U2Mvo?si=Ep0OOs1MGD-ZgXAO" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="prompt"><div class="q">Do we really notice<br><b>everything we see?</b></div><div class="s">Your job is simple:<br><b>count how many times the players in white pass the ball.</b></div></div></div>
   <div class="notes">Good morning, everyone. I want to start with a quick test. Just watch the video and count how many times the players in white pass the ball. That’s it. Just count the passes. Ready? Let’s go. [Play video] Okay, how many did you get? Anyone? Great. Now, did you notice anything strange? Did you see the gorilla?</div>
   <div class="footerline"><span>English Micro-Teaching</span><span>9</span></div>
 </section>
@@ -433,13 +435,12 @@ body.notes-on .slide.active .notes{display:block}
   <div class="footerline"><span>Q&A</span><span>13</span></div>
 </section>
 </div>
-<div id="controls"><button id="prev">‹</button><span id="counter">1 / 13</span><span id="timer">08:00</span><button id="next">›</button><button id="fs">⛶</button></div>
-<div id="help">← → 換頁｜N 講稿｜T 計時｜F 全螢幕</div><div id="progress"></div>
+
 <script>
 const slides=[...document.querySelectorAll('.slide')];let idx=0,remain=480,running=false,timerId=null;
 const counter=document.getElementById('counter'),timer=document.getElementById('timer'),progress=document.getElementById('progress');
 function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
-function show(n){idx=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('active',i===idx));counter.textContent=`${idx+1} / ${slides.length}`;progress.style.width=((idx+1)/slides.length*100)+'%';if(!running){remain=Number(slides[idx].dataset.seconds||480);timer.textContent=fmt(remain)}history.replaceState(null,'','#slide-'+(idx+1));}
+function show(n){idx=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,i)=>s.classList.toggle('active',i===idx));const lazyFrame=slides[idx].querySelector('iframe[data-src]');if(lazyFrame&&!lazyFrame.src){lazyFrame.src=lazyFrame.dataset.src;}counter.textContent=`${idx+1} / ${slides.length}`;progress.style.width=((idx+1)/slides.length*100)+'%';if(!running){remain=Number(slides[idx].dataset.seconds||480);timer.textContent=fmt(remain)}history.replaceState(null,'','#slide-'+(idx+1));}
 function toggleTimer(){running=!running;if(running){timerId=setInterval(()=>{remain=Math.max(0,remain-1);timer.textContent=fmt(remain);if(!remain){clearInterval(timerId);running=false;timer.style.color='#ff7b73'}},1000)}else clearInterval(timerId)}
 function fullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}
 document.getElementById('prev').onclick=()=>show(idx-1);document.getElementById('next').onclick=()=>show(idx+1);document.getElementById('fs').onclick=fullscreen;timer.onclick=toggleTimer;
