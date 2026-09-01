@@ -37,7 +37,7 @@ p{font-size:clamp(13px,1.16vw,20px);line-height:1.55;margin:.4em 0}
 .footerline{position:absolute;left:6.1%;right:6.1%;bottom:2.2%;display:flex;justify-content:space-between;align-items:center;color:#8a96a4;font-size:clamp(9px,.72vw,13px)}
 .timeline{height:64%;display:grid;grid-template-columns:repeat(5,1fr);gap:1.5%;align-items:stretch}
 .tnode{position:relative;border:1px solid var(--line);border-radius:16px;padding:7% 7% 6%;background:#fff;display:flex;flex-direction:column;min-width:0}
-.tnode::after{content:"→";position:absolute;right:-8.7%;top:48%;transform:translateY(-50%);font-size:clamp(20px,2vw,34px);color:#7ca5c8}
+.tnode::after{content:"";position:absolute;right:-9.1%;top:48%;transform:translateY(-50%);width:9.5%;min-width:16px;height:12px;background:linear-gradient(90deg, rgba(124,165,200,.92) 0%, rgba(160,192,221,.92) 72%);clip-path:polygon(0 42%, 66% 42%, 66% 20%, 100% 50%, 66% 80%, 66% 58%, 0 58%);filter:drop-shadow(0 1px 0 rgba(255,255,255,.7));opacity:.95}
 .tnode:last-child::after{display:none}
 .tnode .num{font-size:clamp(20px,2.3vw,40px);font-weight:900;color:#d9e6f1;line-height:1}
 .tnode strong{font-size:clamp(13px,1.1vw,20px);line-height:1.35;margin:.7em 0;color:var(--navy)}
@@ -125,6 +125,7 @@ p{font-size:clamp(13px,1.16vw,20px);line-height:1.55;margin:.4em 0}
 .video{position:relative;width:100%;aspect-ratio:16/9;max-height:100%;border-radius:18px;overflow:hidden;background:#000;border:1px solid #d8d1c3;box-shadow:0 10px 28px rgba(45,36,25,.12)}
 .video img{width:100%;height:100%;object-fit:cover}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.video video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;object-fit:contain}
 .prompt{border-left:5px solid var(--gold);padding-left:7%;}
 .prompt .q{font-size:clamp(18px,1.8vw,31px);line-height:1.35;font-weight:850;color:#2c2419}
 .prompt .s{margin-top:8%;font-size:clamp(12px,1vw,18px);line-height:1.55;color:#665d53}
@@ -398,7 +399,7 @@ body.notes-on .slide.active .notes{display:block}
 <section class="slide en" data-section="英文試教｜5 min" data-seconds="300">
   <div class="head"><span class="section">English Micro-Teaching</span><span class="duration">0:00–0:55</span></div>
   <h2>Selective Attention in Digital Behavior</h2>
-  <div class="video-grid"><div class="video" id="videoBox"><iframe width="560" height="315" data-src="https://www.youtube.com/embed/vJG698U2Mvo?si=Ep0OOs1MGD-ZgXAO" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="prompt"><div class="q">Do we really notice<br><b>everything we see?</b></div><div class="s">Your job is simple:<br><b>count how many times the players in white pass the ball.</b></div></div></div>
+  <div class="video-grid"><div class="video" id="videoBox"><video controls preload="auto" playsinline><source src="selective_attention.mp4" type="video/mp4">Your browser does not support the video tag.</video></div><div class="prompt"><div class="q">Do we really notice<br><b>everything we see?</b></div><div class="s">Your job is simple:<br><b>count how many times the players in white pass the ball.</b></div></div></div>
   <div class="notes">Good morning, everyone. I want to start with a quick test. Just watch the video and count how many times the players in white pass the ball. That’s it. Just count the passes. Ready? Let’s go. [Play video] Okay, how many did you get? Anyone? Great. Now, did you notice anything strange? Did you see the gorilla?</div>
   <div class="footerline"><span>English Micro-Teaching</span><span>9</span></div>
 </section>
@@ -429,7 +430,7 @@ body.notes-on .slide.active .notes{display:block}
 <!-- 13 Q&A -->
 <section class="slide" data-section="Q&A｜7 min" data-seconds="420">
   <div class="head"><span class="section">Q&A 備用頁</span><span class="duration">7 min</span></div>
-  <h2>回答原則：結論 → 證據 → 回到高科大的合作</h2>
+  
   <div class="contrib"><div class="cbox"><div class="cnum">Q</div><div><b>為什麼想加入高科大資管系？</b><p>希望把既有研究、教學、教材與產學經驗放進更強調跨領域協作與產業連結的環境，並和系上現有專長形成互補。</p></div></div><div class="cbox"><div class="cnum">Q</div><div><b>可以立即開哪些課？</b><p>網站流量分析與數位決策、Python 網路資料擷取與分析、生成式 AI 搜尋與電子商務、AI 搜尋與數位內容治理、數位平台資料分析。</p></div></div><div class="cbox"><div class="cnum">Q</div><div><b>未來 3–5 年研究？</b><p>AI 資料取得 → 生成式搜尋 → 資訊可見性 → 數位治理 → 電子商務，並透過跨教師合作爭取國科會、產學與國際合作。</p></div></div><div class="cbox"><div class="cnum">Q</div><div><b>能帶來什麼產學資源？</b><p>既有數據平台、網站流量、爬蟲與資料治理合作經驗，可把企業生成式 AI 導入問題拆成跨領域合作題目。</p></div></div></div>
   <div class="notes">Q&A 不要背長答案。每題控制 40 到 60 秒。先回答結論，再用一個既有成果當證據，最後回到高科大資管系可以如何合作。</div>
   <div class="footerline"><span>Q&A</span><span>13</span></div>
